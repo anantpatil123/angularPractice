@@ -1,1 +1,22 @@
-<p>login works!</p>
+<ion-grid>
+    <ion-row class="page-row">
+        <ion-col class="login-img"></ion-col>
+        <ion-col class="form-container-parent">
+            <div class="form-container">
+
+            <ion-row class="form-control">
+                <label htmlFor="email">Username</label>
+                <input type="text" pInputText formControlName="email" />
+            </ion-row>
+            <ion-row class="form-control">
+                <label htmlFor="password">Password</label>
+
+                <input type="text" pInputText formControlName="password" />
+            </ion-row>
+            <ion-row class="form-control">
+                <p-button class="submit-btn" label="Submit"> </p-button>
+            </ion-row>
+        </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>
