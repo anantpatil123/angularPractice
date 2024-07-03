@@ -2,21 +2,21 @@
     <ion-row class="page-row">
         <ion-col class="login-img"></ion-col>
         <ion-col class="form-container-parent">
-            <div class="form-container">
-
-            <ion-row class="form-control">
-                <label htmlFor="email">Username</label>
-                <input type="text" pInputText formControlName="email" />
-            </ion-row>
-            <ion-row class="form-control">
-                <label htmlFor="password">Password</label>
-
-                <input type="text" pInputText formControlName="password" />
-            </ion-row>
-            <ion-row class="form-control">
-                <p-button class="submit-btn" label="Submit"> </p-button>
-            </ion-row>
-        </div>
+            <ion-row class="page-title center"> Login</ion-row>
+            <ion-form class="form-container" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <ion-row class="form-control">
+                    <label htmlFor="email">Email</label>
+                    <input type="text" pInputText formControlName="email" />
+                </ion-row>
+                <ion-row class="form-control">
+                    <label htmlFor="password">Password</label>
+                    <input type="text" pInputText formControlName="password" />
+                </ion-row>
+                <ion-row class="form-control">
+                    <button pButton type="submit" class="submit-btn center p-button-outlined p-button-secondary"
+                        >Login </button>
+                </ion-row>
+            </ion-form>
         </ion-col>
     </ion-row>
 </ion-grid>

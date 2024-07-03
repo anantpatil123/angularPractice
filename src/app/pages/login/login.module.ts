@@ -5,6 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { LoginComponent } from './login.component';
 import { IonicModule } from '@ionic/angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { IonicModule } from '@ionic/angular';
     LoginRoutingModule,
     InputTextModule,
     ButtonModule,
-    IonicModule
+    IonicModule,
+    ReactiveFormsModule
   ],exports:[LoginComponent]
 })
 export class LoginModule { }
